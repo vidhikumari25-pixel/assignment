@@ -38,10 +38,6 @@
             font-size: 15px;
         }
 
-        nav a:hover {
-            color: #ff8066;
-        }
-
         .hero {
             display: flex;
             justify-content: space-between;
@@ -105,10 +101,6 @@
             border-radius: 5px;
         }
 
-        .skill:hover {
-            background-color: coral;
-        }
-
         .projects-container {
             display: flex;
             flex-direction: column;
@@ -149,10 +141,6 @@
             color: white;
             border: none;
             cursor: pointer;
-        }
-
-        .contact button:hover {
-            background-color: coral;
         }
 
         footer {
@@ -241,7 +229,6 @@
         </p>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills">
         <h2>My Skills</h2>
 
@@ -265,7 +252,6 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects">
         <h2>My Projects</h2>
 
@@ -287,16 +273,16 @@
     <section class="contact" id="contact">
         <h2>Contact Me</h2>
 
-        <form onsubmit="alert('Thank you for your message!'); return false;">
+        <form>
 
-            <label>Name</label>
-            <input type="text" placeholder="Enter your name" required>
+            <label for="Name">Name</label>
+            <input type="text" placeholder="Enter your name" >
 
-            <label>Email</label>
-            <input type="email" placeholder="Enter your email" required>
+            <label for="Email">Email</label>
+            <input type="email" placeholder="Enter your email" >
 
             <label>Message</label>
-            <textarea rows="3" placeholder="Write your message" required></textarea>
+            <textarea rows="3" placeholder="Write your message" ></textarea>
 
             <button type="submit">Send</button>
 
